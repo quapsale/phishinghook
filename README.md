@@ -2,6 +2,7 @@
 
 [![DOI](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.14260284-blue.svg)](https://doi.org/10.5281/zenodo.14260284)
 [![Paper DOI](https://img.shields.io/badge/IEEE_DSN_2025-10.1109%2FDSN64029.2025.00033-purple.svg)](https://doi.org/10.1109/DSN64029.2025.00033)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 📌 Overview
 PhishingHook is an end-to-end framework for extracting, disassembling, and analyzing Ethereum smart contract bytecode to identify malicious phishing contracts. By evaluating contract mechanics through EVM opcodes, it provides multiple detection methodologies spanning statistical classifiers, language models, and vision-based architectures.
