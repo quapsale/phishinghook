@@ -1,0 +1,13 @@
+Diagram,Treatment A,Treatment B,Wilcoxon Raw p-value,Wilcoxon Adjusted (Holm),Wilcoxon Adjusted (Bonferroni),Cliff's Delta
+Accuracy,ECA+EfficientNet,Random Forest,0.25,0.75,0.75,1.0
+Accuracy,SCSGuard,Random Forest,0.25,0.75,0.75,1.0
+Accuracy,SCSGuard,ECA+EfficientNet,0.25,0.75,0.75,-0.7777777777777778
+Precision,ECA+EfficientNet,Random Forest,0.25,0.75,0.75,1.0
+Precision,SCSGuard,Random Forest,0.25,0.75,0.75,1.0
+Precision,SCSGuard,ECA+EfficientNet,0.75,0.75,2.25,-0.3333333333333333
+Recall,ECA+EfficientNet,Random Forest,0.25,0.75,0.75,1.0
+Recall,SCSGuard,Random Forest,0.25,0.75,0.75,1.0
+Recall,SCSGuard,ECA+EfficientNet,0.25,0.75,0.75,-1.0
+F1 Score,ECA+EfficientNet,Random Forest,0.25,0.75,0.75,1.0
+F1 Score,SCSGuard,Random Forest,0.25,0.75,0.75,1.0
+F1 Score,SCSGuard,ECA+EfficientNet,0.25,0.75,0.75,-0.7777777777777778

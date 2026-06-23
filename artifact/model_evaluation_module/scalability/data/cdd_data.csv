@@ -1,0 +1,37 @@
+dataset,method,metric,diagram
+Split 1,Random Forest,0.9263698630136986,Accuracy
+Split 2,Random Forest,0.9263067694944301,Accuracy
+Split 3,Random Forest,0.9285714285714286,Accuracy
+Split 1,ECA+EfficientNet,0.8051391862955032,Accuracy
+Split 2,ECA+EfficientNet,0.8404710920770878,Accuracy
+Split 3,ECA+EfficientNet,0.87,Accuracy
+Split 1,SCSGuard,0.8501070663811563,Accuracy
+Split 2,SCSGuard,0.8811563169164882,Accuracy
+Split 3,SCSGuard,0.9021428571428571,Accuracy
+Split 1,Random Forest,0.9375,Precision
+Split 2,Random Forest,0.9388489208633094,Precision
+Split 3,Random Forest,0.9269461077844311,Precision
+Split 1,ECA+EfficientNet,0.8526315789473684,Precision
+Split 2,ECA+EfficientNet,0.8574610244988864,Precision
+Split 3,ECA+EfficientNet,0.8980891719745223,Precision
+Split 1,SCSGuard,0.8326180257510729,Precision
+Split 2,SCSGuard,0.9164733178654292,Precision
+Split 3,SCSGuard,0.8989751098096632,Precision
+Split 1,Random Forest,0.9152542372881356,Recall
+Split 2,Random Forest,0.9094076655052264,Recall
+Split 3,Random Forest,0.9236276849642004,Recall
+Split 1,ECA+EfficientNet,0.72,Recall
+Split 2,ECA+EfficientNet,0.8191489361702128,Recall
+Split 3,ECA+EfficientNet,0.8269794721407625,Recall
+Split 1,SCSGuard,0.8622222222222222,Recall
+Split 2,SCSGuard,0.8404255319148937,Recall
+Split 3,SCSGuard,0.9002932551319648,Recall
+Split 1,Random Forest,0.9262435677530018,F1 Score
+Split 2,Random Forest,0.9238938053097345,F1 Score
+Split 3,Random Forest,0.9252839210998207,F1 Score
+Split 1,ECA+EfficientNet,0.7807228915662651,F1 Score
+Split 2,ECA+EfficientNet,0.8378672470076169,F1 Score
+Split 3,ECA+EfficientNet,0.8610687022900764,F1 Score
+Split 1,SCSGuard,0.8471615720524017,F1 Score
+Split 2,SCSGuard,0.876803551609323,F1 Score
+Split 3,SCSGuard,0.8996336996336997,F1 Score

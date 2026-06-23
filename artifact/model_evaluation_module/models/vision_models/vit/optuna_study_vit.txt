@@ -1,0 +1,4 @@
+# Due to a technical error, the .pkl version was not saved.
+
+Best parameters: {'learning_rate': 2.0119843798539834e-05, 'batch_size': 32, 'weight_decay': 2.4929055035669728e-05, 'patience': 10, 'epochs': 48}
+Best mean accuracy: 0.8688571428571429

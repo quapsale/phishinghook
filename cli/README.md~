@@ -1,0 +1,93 @@
+# PhishingHook
+
+**PhishingHook** is a command-line tool for analyzing Ethereum smart contract bytecode. It provides two core functionalities:
+
+1. **Disassembly**: Converts raw EVM bytecode into a structured sequence of instructions.
+2. **Phishing Detection**: Applies a machine learning model to classify smart contracts as either phishing or legitimate.
+
+The tool is designed to support research and analysis related to EVM security and bytecode-level contract classification.
+
+---
+
+## Features
+
+- Disassembles EVM bytecode using the `evmdasm` library
+- Extracts instruction-level features
+- Uses a pretrained Random Forest classifier for phishing detection
+- Packaged with Docker for reproducibility and ease of use
+
+---
+
+## Requirements
+
+- [Docker](https://www.docker.com/) installed on the host system
+
+---
+
+## Docker Setup
+
+```bash
+docker build -t phishinghook .
+```
+
+---
+
+## Usage
+
+The tool provides two subcommands: `disassemble` and `detect`.
+
+### Disassemble Bytecode
+
+This command converts raw EVM bytecode into a CSV file listing each instruction with its corresponding opcode, operand, and gas estimate.
+
+**Example**:
+
+```bash
+docker run --rm -v "$PWD:/execution" phishinghook disassemble '0x6080604052600036606060008073afe266e64e373ae7e74aa5ef0ce417198b3aa4c96001600160a01b03168585604051603892919060ab565b600060405180830381855af49150503d80600081146071576040519150601f19603f3d011682016040523d82523d6000602084013e6076565b606091505b509150915081609e5760405162461bcd60e51b815260040160959060bb565b60405180910390fd5b8051945060200192505050f35b6000828483379101908152919050565b60208082526004908201526311985a5b60e21b60408201526060019056fea2646970667358221220e9e59d6a9f0befcfdf64f9baf7d5d970bad8fb28aee9fde6b53a300b470c5c6064736f6c63430008000033'
+```
+
+**Arguments**:
+
+- `bytecode` (required): The EVM bytecode string to disassemble.
+
+---
+
+### Detect Phishing Contracts
+
+This command analyzes bytecode using a pretrained Histogram Similarity Classifier (Random Forest) to determine whether the contract is phishing.
+
+**Example**:
+
+```bash
+docker run --rm -v "$PWD:/execution" phishinghook detect '0x6080604052600036606060008073afe266e64e373ae7e74aa5ef0ce417198b3aa4c96001600160a01b03168585604051603892919060ab565b600060405180830381855af49150503d80600081146071576040519150601f19603f3d011682016040523d82523d6000602084013e6076565b606091505b509150915081609e5760405162461bcd60e51b815260040160959060bb565b60405180910390fd5b8051945060200192505050f35b6000828483379101908152919050565b60208082526004908201526311985a5b60e21b60408201526060019056fea2646970667358221220e9e59d6a9f0befcfdf64f9baf7d5d970bad8fb28aee9fde6b53a300b470c5c6064736f6c63430008000033'
+```
+
+**Arguments**:
+
+- `bytecode` (required): The EVM bytecode string to analyze.
+
+---
+
+## Model Format
+
+The model file must be a Python pickle (`.pkl`) file containing a dictionary with two keys:
+
+```python
+{
+  'model': <sklearn.ensemble.RandomForestClassifier>,
+  'all_opcodes': <list of opcode strings used as features>
+}
+```
+
+---
+
+## Output
+
+- **Disassemble**: A CSV file with the following columns:
+  - `InstructionIndex`, `OPCODE`, `OPERAND`, `GAS`
+
+- **Detect**: A printed label:
+  - `Phishing Detected`
+  - `Legitimate Contract`
+
+---

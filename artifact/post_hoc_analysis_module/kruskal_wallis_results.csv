@@ -1,0 +1,5 @@
+"Metric",".y.","n","statistic","df","p","method","p.adj","p.adj.signif"
+"Accuracy","Value",390,360.806052009543,12,7.35e-70,"Kruskal-Wallis",2.94e-69,"****"
+"F1_Score","Value",390,359.778055117118,12,1.21e-69,"Kruskal-Wallis",3.63e-69,"****"
+"Precision","Value",390,345.209422246858,12,1.44e-66,"Kruskal-Wallis",2.88e-66,"****"
+"Recall","Value",390,322.03101798512,12,1.1e-61,"Kruskal-Wallis",1.1e-61,"****"
