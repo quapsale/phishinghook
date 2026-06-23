@@ -29,7 +29,7 @@ Due to its size, the dataset is permanently archived and publicly accessible via
 ### Installation Steps
 ```bash
 # Clone the repository
-git clone [git@github.com:quapsale/phishinghook.git](git@github.com:quapsale/phishinghook.git)
+git clone git@github.com:quapsale/phishinghook.git
 cd phishinghook
 
 # Set up and activate Python virtual environment
