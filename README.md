@@ -104,6 +104,17 @@ Contains the rigorous evaluation logic used to validate performance gains:
 
 ---
 
+---
+
+## 👥 Authors
+* **Pasquale De Rosa** – *University of Neuchâtel* – [pasquale.derosa@unine.ch](mailto:pasquale.derosa@unine.ch)
+* **Simon Queyrut** – *University of Neuchâtel* – [simon.queyrut@unine.ch](mailto:simon.queyrut@unine.ch)
+* **Yérom-David Bromberg** – *University of Rennes, CNRS, INRIA, IRISA* – [david.bromberg@irisa.fr](mailto:david.bromberg@irisa.fr)
+* **Pascal Felber** – *University of Neuchâtel* – [pascal.felber@unine.ch](mailto:pascal.felber@unine.ch)
+* **Valerio Schiavoni** – *University of Neuchâtel* – [valerio.schiavoni@unine.ch](mailto:valerio.schiavoni@unine.ch)
+
+---
+
 ## 📄 Citation
 If you use this framework, dataset, or find our methodology helpful in your security research, please cite our IEEE DSN 2025 paper:
 
